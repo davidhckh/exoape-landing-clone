@@ -1,0 +1,44 @@
+#hero-container {
+    max-width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    padding: 10vw 0;
+    width: 100%;
+}
+
+.hero-background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: black;
+    max-width: 100%;
+}
+
+.hero-background img {
+    object-fit: cover;
+    object-position: 0 -45px;
+    width: 100%;
+}
+
+#hero-container span {
+    font-size: 1.66vw;
+    font-weight: 300;
+    line-height: 2.3vw;
+    display: block;
+}
+
+.top-span-container {
+    margin-top: 20vw;
+    margin-bottom: 5vw;
+}
+
+.bottom-span {
+    margin-top: 7vw;
+}

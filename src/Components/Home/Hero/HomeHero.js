@@ -1,0 +1,53 @@
+import './HomeHero.css'
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useRef, useEffect } from "react"
+
+gsap.registerPlugin(ScrollTrigger)
+
+const HomeHero = () => {
+
+    const backgroundImage = useRef(null)
+
+    useEffect(() => {
+        window.requestAnimationFrame(() => gsap.to(backgroundImage.current, {
+            y: 800,
+            opacity: .3,
+            scrollTrigger: {
+                start: "top",
+                end: "bottom",
+                scrub: .9,
+            },
+        }))
+    }, [])
+
+    return (
+        <div id="hero-container">
+            <div className="content-width column">
+                <div className="hero-background">
+                    <img src="/home/exo-ape-hero.webp" alt="exoape hero" ref={backgroundImage} />
+                </div>
+                <div className="top-span-container">
+                    <span>Intrigued by beauty, fascinated by technology</span>
+                    <span>and fuelled with an everlasting devotion to digital</span>
+                    <span>craftsmanship and meaningful aesthetics.</span>
+                </div>
+                <h1>
+                    Digital<br />
+                    Design<br />
+                    Experience
+                </h1>
+                <span className="bottom-span">
+                    White-glove digital experiences, engaging<br />
+                    content and impactful design solutions that<br />
+                    inspire, affect and delight. We carefully wrap<br />
+                    emotionally rich aesthetics around strategic<br />
+                    concepts to deliver award-winning digital<br />
+                    design that exceeds expectations.
+                </span>
+            </div>
+        </div>
+    )
+}
+
+export default HomeHero

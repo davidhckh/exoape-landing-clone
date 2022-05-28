@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Lausanne';
+    font-weight: 300;
+    src: url(./fonts/TWKLausanne-300.woff2) format('woff');
+}
+
+@font-face {
+    font-family: 'Lausanne';
+    font-weight: 400;
+    src: url(./fonts/TWKLausanne-400.woff2) format('woff');
+}
+
+@font-face {
+    font-family: 'Lausanne';
+    font-weight: 500;
+    src: url(./fonts/TWKLausanne-500.woff2) format('woff');
+}

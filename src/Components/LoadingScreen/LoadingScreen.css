@@ -1,0 +1,18 @@
+.loading-svg path {
+    fill: #0D0E13;
+}
+
+.loading-container svg {
+    height: 140px;
+    background: #E4E0DB;
+}
+
+.loading-container rect {
+    fill: #38383B;
+    transition: 2s;
+}
+
+.loading-container {
+    background: #0D0E13;
+    height: 100%;
+}
