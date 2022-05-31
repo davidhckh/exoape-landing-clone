@@ -1,4 +1,5 @@
 import HomeHero from './Hero/HomeHero'
+import HomeReel from './Reel/HomeReel'
 import HomeWork from './Work/HomeWork'
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <>
             <HomeHero />
             <HomeWork />
+            <HomeReel />
         </>
     )
 }

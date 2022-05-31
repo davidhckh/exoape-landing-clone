@@ -27,6 +27,10 @@
     width: 100%;
 }
 
+#hero-container h1 {
+    transform: translateX(-1.4vw);
+}
+
 #hero-container span {
     font-size: 1.66vw;
     font-weight: 300;

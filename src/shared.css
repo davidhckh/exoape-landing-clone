@@ -38,7 +38,12 @@ h1 {
   font-size: 16vw;
   line-height: 16vw;
   font-weight: 300 !important;
-  transform: translateX(-1.38889vw);
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
 }
 
 .content-width {

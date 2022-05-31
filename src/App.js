@@ -19,7 +19,7 @@ const App = () => {
     let height = 0
     let offset = 0
 
-    function smoothScroll() {
+    const smoothScroll = () => {
       offset += (window.pageYOffset - offset) * speed
 
       const scroll = 'translateY(-' + offset + 'px) translateZ(0)'
@@ -31,7 +31,7 @@ const App = () => {
 
     //--------------------------- Resize ---------------------------------//
     const resize = () => {
-      height = scrollWrap.getBoundingClientRect().height - 1
+      height = scrollWrap.getBoundingClientRect().height
       body.style.height = Math.floor(height) + 'px'
     }
     resize()

@@ -11,11 +11,11 @@ const HomeHero = () => {
 
     useEffect(() => {
         window.requestAnimationFrame(() => gsap.to(backgroundImage.current, {
-            y: 800,
+            y: () => window.innerHeight * 1.5,
             opacity: .3,
             scrollTrigger: {
-                start: "top",
-                end: "bottom",
+                start: 'top',
+                end: 'bottom',
                 scrub: .9,
             },
         }))

@@ -1,3 +1,70 @@
-#home-work-container {
+#home-work-section {
     color: #0D0E13;
+}
+
+#home-work-section h1 {
+    margin-top: 25vh;
+    margin-left: 7vw;
+    margin-bottom: 10vh;
+    font-size: 17vw;
+    line-height: 17vw;
+}
+
+.block {
+    position: relative;
+}
+
+.block:hover video {
+    display: block;
+}
+
+.block img {
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.block video {
+    position: absolute;
+    object-fit: cover;
+    width: calc(100% + 2px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+#home-work-right-section {
+    margin-left: auto;
+}
+
+#block-0 {
+    margin-left: 7vw;
+    height: 50.625vw;
+}
+
+#block-1 {
+    height: 32.84722vw;
+    margin-bottom: 11.59722vw;
+}
+
+#block-2 {
+    height: 41.66667vw
+}
+
+#block-3 {
+    height: 23.88889vw;
+    margin-left: 7vw;
+    margin-right: 9vw;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+}
+
+#home-work-right-section p {
+    margin-top: 3vw;
+    margin-bottom: 15vw;
+    font-size: 1.66667vw;
+    line-height: 2.4vw;
+    font-weight: 300;
 }
