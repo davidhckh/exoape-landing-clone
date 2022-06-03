@@ -11,13 +11,11 @@ const HomeWork = () => {
     const image3 = useRef(null)
 
     useEffect(() => {
-        window.requestAnimationFrame(() => {
-            //image 1
-            gsap.fromTo(image1.current, { y: 100 }, { y: -130, scrollTrigger: { trigger: image1.current, scrub: .9, }, })
+        //image 1
+        gsap.fromTo(image1.current, { y: 100 }, { y: -130, scrollTrigger: { trigger: image1.current, scrub: true, }, })
 
-            //image 3
-            gsap.fromTo(image3.current, { y: -50 }, { y: 100, scrollTrigger: { trigger: image3.current, scrub: .9, }, })
-        })
+        //image 3
+        gsap.fromTo(image3.current, { y: -50 }, { y: 100, scrollTrigger: { trigger: image3.current, scrub: true, }, })
     }, [])
 
     const handleMouseEnter = (event) => {
@@ -45,7 +43,7 @@ const HomeWork = () => {
         const text = event.target.children[2].children[0]
 
         if (text)
-            gsap.fromTo(text, { rotation: 0, opacity: 1, y: 0 }, { rotation: -10, y: -15, opacity: 0, duration: .5, ease: 'power4.easeOut' })
+            gsap.fromTo(text, { rotation: 0, opacity: 1, y: 0 }, { rotation: -10, y: -30, opacity: 0, duration: .5, ease: 'power4.easeOut' })
     }
 
     return (

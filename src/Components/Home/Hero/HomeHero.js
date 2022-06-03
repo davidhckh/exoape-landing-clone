@@ -10,15 +10,15 @@ const HomeHero = () => {
     const backgroundImage = useRef(null)
 
     useEffect(() => {
-        window.requestAnimationFrame(() => gsap.to(backgroundImage.current, {
-            y: () => window.innerHeight * 1.5,
+        gsap.to(backgroundImage.current, {
+            y: () => window.innerHeight * 2,
             opacity: .3,
             scrollTrigger: {
                 start: 'top',
                 end: 'bottom',
-                scrub: .9,
+                scrub: true,
             },
-        }))
+        })
     }, [])
 
     return (
