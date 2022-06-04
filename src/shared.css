@@ -40,6 +40,11 @@ h1 {
   font-weight: 300 !important;
 }
 
+h2 {
+  font-size: 10vw;
+  font-weight: 300 !important;
+}
+
 .icon {
   height: 16px;
   width: 16px;

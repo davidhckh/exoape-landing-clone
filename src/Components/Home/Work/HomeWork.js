@@ -21,29 +21,29 @@ const HomeWork = () => {
     const handleMouseEnter = (event) => {
         //play video
         const video = event.target.children[1]
-
         if (video ? video.classList.contains('video') : false)
             video.play()
 
         //animation
         const text = event.target.children[2].children[0]
-
-        if (text)
+        if (text) {
+            gsap.killTweensOf(text)
             gsap.fromTo(text, { rotation: 10, opacity: 0, y: 15 }, { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut' })
+        }
     }
 
     const handleMouseLeave = (event) => {
         //pause video
         const video = event.target.children[1]
-
         if (video ? video.classList.contains('video') : false)
             video.pause()
 
         //animation
         const text = event.target.children[2].children[0]
-
-        if (text)
+        if (text) {
+            gsap.killTweensOf(text)
             gsap.fromTo(text, { rotation: 0, opacity: 1, y: 0 }, { rotation: -10, y: -30, opacity: 0, duration: .5, ease: 'power4.easeOut' })
+        }
     }
 
     return (
@@ -64,7 +64,9 @@ const HomeWork = () => {
                 </div>
                 <div className="column" id="home-work-right-section">
                     <div className="row">
-                        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon" data-v-669b4a84=""><path d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z" fill="currentColor" data-v-669b4a84=""></path></svg>
+                        <svg viewBox="0 0 12 12" fill="#0D0E13" xmlns="http://www.w3.org/2000/svg" className="icon" data-v-669b4a84="">
+                            <path d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"></path>
+                        </svg>
                         <span>Featured Projects</span>
                     </div>
                     <p>Highlights of cases that we<br />passionately built with forward-<br />thinking clients and friends over<br />the years.</p>
