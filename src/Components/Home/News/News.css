@@ -1,0 +1,15 @@
+#news-container {
+    color: #0D0E13;
+    padding: 13.88889vw 0;
+}
+
+#news-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#news-container .news-media:nth-child(1) {
+    width: 25.97222vw;
+    height: 44.375vw;
+}

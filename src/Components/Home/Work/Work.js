@@ -1,4 +1,4 @@
-import './HomeWork.css'
+import './Work.css'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef, useEffect } from "react"
@@ -47,7 +47,7 @@ const HomeWork = () => {
     }
 
     return (
-        <section className="column content-width" id="home-work-section">
+        <section className="column content-width" id="work-section">
             <h1>Work</h1>
             <div className="row">
                 <div id="block-0" className="block" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -62,7 +62,7 @@ const HomeWork = () => {
                         </p>
                     </div>
                 </div>
-                <div className="column" id="home-work-right-section">
+                <div className="column" id="work-right-section">
                     <div className="row">
                         <svg viewBox="0 0 12 12" fill="#0D0E13" xmlns="http://www.w3.org/2000/svg" className="icon" data-v-669b4a84="">
                             <path d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"></path>

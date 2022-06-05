@@ -1,4 +1,4 @@
-import './HomeReel.css'
+import './Reel.css'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef, useEffect, useState } from "react"
@@ -43,9 +43,9 @@ const HomeReel = () => {
     }
 
     return (
-        <div id="home-reel-wrapper">
-            <div id="home-reel-container" className="center column" ref={container} onClick={handleClick} onWheel={handleScroll}>
-                <div className="row center" id="home-reel-top-p">
+        <div id="reel-wrapper">
+            <div id="reel-container" className="center column" ref={container} onClick={handleClick} onWheel={handleScroll}>
+                <div className="row center" id="reel-top-p">
                     <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" className="icon" data-v-669b4a84=""><path d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z" fill="currentColor" data-v-669b4a84=""></path></svg>
                     <p>Work in motion</p>
                 </div>
@@ -56,7 +56,7 @@ const HomeReel = () => {
                     </video>
                     <h2 ref={heading1}>Reel</h2>
                 </div>
-                <p id="home-reel-bottom-p">Our work is best experienced in motion. Don't<br />forget to put on your headphones.</p>
+                <p id="reel-bottom-p">Our work is best experienced in motion. Don't<br />forget to put on your headphones.</p>
             </div>
             {isPlaying ? <VideoPlayer handleClick={handleClick} handleScroll={handleScroll} /> : null}
         </div>

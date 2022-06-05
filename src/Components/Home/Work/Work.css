@@ -1,8 +1,8 @@
-#home-work-section {
+#work-section {
     color: #0D0E13;
 }
 
-#home-work-section h1 {
+#work-section h1 {
     margin-top: 25vh;
     margin-left: 7vw;
     margin-bottom: 10vh;
@@ -60,7 +60,7 @@
     font-weight: 500;
 }
 
-#home-work-right-section {
+#work-right-section {
     margin-left: auto;
 }
 
@@ -87,7 +87,7 @@
     margin-bottom: 20vw;
 }
 
-#home-work-right-section p {
+#work-right-section p {
     margin-top: 3vw;
     font-size: 1.66667vw;
     line-height: 2vw;

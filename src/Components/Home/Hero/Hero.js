@@ -1,4 +1,4 @@
-import './HomeHero.css'
+import './Hero.css'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef, useEffect } from "react"

@@ -1,8 +1,8 @@
-#home-reel-wrapper {
+#reel-wrapper {
     width: 100%;
 }
 
-#home-reel-container {
+#reel-container {
     min-height: 100vh;
     background: #0D0E13;
     width: 100%;
@@ -12,7 +12,7 @@
     font-weight: 300;
 }
 
-#home-reel-container .video {
+#reel-container .video {
     opacity: .3;
     height: 100vh;
     width: 100%;
@@ -22,27 +22,27 @@
     z-index: -1;
 }
 
-#home-reel-container h2:first-child {
+#reel-container h2:first-child {
     margin-right: 1.2vw;
     transform: translateX(-18vw);
 }
 
-#home-reel-container h2:last-child {
+#reel-container h2:last-child {
     margin-left: 1.2vw;
     transform: translateX(18vw);
 }
 
-#home-reel-container p {
+#reel-container p {
     font-size: .97222vw;
 }
 
-#home-reel-bottom-p {
+#reel-bottom-p {
     text-align: center;
     position: absolute;
     bottom: 3vw;
 }
 
-#home-reel-top-p {
+#reel-top-p {
     position: absolute;
     top: 3vw;
 }

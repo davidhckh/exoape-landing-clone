@@ -29,6 +29,7 @@
 
 #hero-container h1 {
     transform: translateX(-1.4vw);
+    letter-spacing: -.79861vw;
 }
 
 #hero-container span {

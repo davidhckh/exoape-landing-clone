@@ -1,15 +1,15 @@
-import HomeHero from './Hero/HomeHero'
-import HomeNews from './News/HomeNews'
-import HomeReel from './Reel/HomeReel'
-import HomeWork from './Work/HomeWork'
+import Hero from './Hero/Hero'
+import News from './News/News'
+import Reel from './Reel/Reel'
+import Work from './Work/Work'
 
 const Home = () => {
     return (
         <>
-            <HomeHero />
-            <HomeWork />
-            <HomeReel />
-            <HomeNews />
+            <Hero />
+            <Work />
+            <Reel />
+            <News />
         </>
     )
 }
