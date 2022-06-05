@@ -11,8 +11,8 @@ const VideoPlayer = ({ handleClick, handleScroll }) => {
     }, [])
 
     return (
-        <div ref={container} onClick={handleClick} onWheel={handleScroll}>
-            <video autoPlay="autoplay" className="video-player">
+        <div ref={container} onClick={handleClick} onWheel={handleScroll} className="video-player">
+            <video autoPlay="autoplay">
                 <source src="https://a.storyblok.com/f/133769/x/d0586c09b0/showreel-exoape.mp4" type="video/mp4" />
             </video>
         </div>
