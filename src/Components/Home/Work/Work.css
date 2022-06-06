@@ -3,11 +3,15 @@
 }
 
 #work-section h1 {
+    font-size: 17vw;
+    line-height: 17vw;
+    transform-origin: left center;
+}
+
+#work-section .anim:first-child {
     margin-top: 25vh;
     margin-left: 7vw;
     margin-bottom: 10vh;
-    font-size: 17vw;
-    line-height: 17vw;
 }
 
 .block {

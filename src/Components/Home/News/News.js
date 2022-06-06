@@ -12,6 +12,8 @@ const News = () => {
     const image2 = useRef(null)
     const image3 = useRef(null)
     const image4 = useRef(null)
+    const heading0 = useRef(null)
+    const heading1 = useRef(null)
 
     useEffect(() => {
         //Image 0
@@ -43,8 +45,17 @@ const News = () => {
         //Image 4
         gsap.to(image4.current, {
             x: () => window.innerWidth * .13,
-            scrollTrigger: { trigger: image4.current, scrub: .98 , start: 'top bottom', end: 'bottom top'}
+            scrollTrigger: { trigger: image4.current, scrub: .98, start: 'top bottom', end: 'bottom top' }
         })
+
+        //heading scroll trigger opening
+        gsap.fromTo(heading0.current,
+            { rotation: 6, opacity: 0, y: () => heading0.current.clientHeight * .5 },
+            { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut', scrollTrigger: { trigger: heading1.current, start: 'center bottom' } })
+
+        gsap.fromTo(heading1.current,
+            { rotation: 6, opacity: 0, y: () => heading1.current.clientHeight * .5 },
+            { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut', scrollTrigger: { trigger: heading1.current, start: 'center bottom' } })
     }, [])
 
     return (
@@ -85,7 +96,14 @@ const News = () => {
                 </svg>
                 <p className="news-small-heading">In the media</p>
             </div>
-            <h2>Spread<br />the News</h2>
+            <h2>
+                <div className="anim">
+                    <div ref={heading0}>Spread</div>
+                </div>
+                <div className="anim">
+                    <div ref={heading1}>the News</div>
+                </div>
+            </h2>
             <p className="news-text">Find out more about our work on these<br />leading design and technology platforms.</p>
         </div>
     )

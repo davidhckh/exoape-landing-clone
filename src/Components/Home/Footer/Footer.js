@@ -8,8 +8,11 @@ gsap.registerPlugin(ScrollTrigger)
 const Footer = () => {
 
     const footerContainer = useRef(null)
+    const heading0 = useRef(null)
+    const heading1 = useRef(null)
 
     useEffect(() => {
+        //container prallax
         gsap.fromTo(footerContainer.current,
             {
                 y: () => -window.innerHeight
@@ -24,12 +27,28 @@ const Footer = () => {
                 },
             }
         )
+
+        //heading scroll trigger opening
+        gsap.fromTo(heading0.current,
+            { rotation: 6, opacity: 0, y: () => heading0.current.clientHeight * .5 },
+            { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut', scrollTrigger: { trigger: footerContainer.current, start: 'center center' } })
+
+        gsap.fromTo(heading1.current,
+            { rotation: 6, opacity: 0, y: () => heading1.current.clientHeight * .5 },
+            { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut', scrollTrigger: { trigger: footerContainer.current, start: 'center center' } })
     }, [])
 
     return (
         <footer className="center" ref={footerContainer}>
             <div id="footer-content" className="content-width column">
-                <h2>Our<br />Story</h2>
+                <h2>
+                    <div className="anim">
+                        <div ref={heading0}>Our</div>
+                    </div>
+                    <div className="anim">
+                        <div ref={heading1}>Story</div>
+                    </div>
+                </h2>
                 <p>The story behind Exo Ape is one of<br />exploration, creativity and curiosity.</p>
                 <hr />
                 <p id="footer-final-p">

@@ -9,6 +9,7 @@ const HomeWork = () => {
 
     const image1 = useRef(null)
     const image3 = useRef(null)
+    const heading = useRef(null)
 
     useEffect(() => {
         //image 1
@@ -16,6 +17,11 @@ const HomeWork = () => {
 
         //image 3
         gsap.fromTo(image3.current, { y: -50 }, { y: 100, scrollTrigger: { trigger: image3.current, scrub: true, }, })
+
+        //heading scroll trigger opening
+        gsap.fromTo(heading.current,
+            { rotation: 6, opacity: 0, y: () => heading.current.clientHeight * .5 },
+            { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut', scrollTrigger: { trigger: heading.current, start: 'center bottom' } })
     }, [])
 
     const handleMouseEnter = (event) => {
@@ -28,7 +34,7 @@ const HomeWork = () => {
         const text = event.target.children[2].children[0]
         if (text) {
             gsap.killTweensOf(text)
-            gsap.fromTo(text, { rotation: 10, opacity: 0, y: 15 }, { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut' })
+            gsap.fromTo(text, { rotation: 10, opacity: 0, y: () => text.clientHeight * .5 }, { rotation: 0, y: 0, opacity: 1, duration: .7, ease: 'power4.easeOut' })
         }
     }
 
@@ -42,13 +48,15 @@ const HomeWork = () => {
         const text = event.target.children[2].children[0]
         if (text) {
             gsap.killTweensOf(text)
-            gsap.fromTo(text, { rotation: 0, opacity: 1, y: 0 }, { rotation: -10, y: -30, opacity: 0, duration: .5, ease: 'power4.easeOut' })
+            gsap.fromTo(text, { rotation: 0, opacity: 1, y: 0 }, { rotation: -10, y: -text.clientHeight, opacity: 0, duration: .5, ease: 'power4.easeOut' })
         }
     }
 
     return (
         <section className="column content-width" id="work-section">
-            <h1>Work</h1>
+            <div className="anim">
+                <h1 ref={heading}>Work</h1>
+            </div>
             <div className="row">
                 <div id="block-0" className="block" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <img src="/home/work/ali-ali-hero.webp" height="3113" alt="Ottografie" loading="lazy" />
