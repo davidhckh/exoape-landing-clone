@@ -3,7 +3,7 @@
 ✏️ Made for practice
 🏗️ This project is under construction.
 
-[Live View](https://nodejs.org/en/download/](https://exoape-landing-clone.vercel.app/)
+[Live View](https://exoape-landing-clone.vercel.app/)
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
