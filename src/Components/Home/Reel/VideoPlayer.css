@@ -8,3 +8,9 @@
     background: #0D0E13;
     cursor: pointer;
 }
+
+.video-player video {
+    height: 100%;
+    width: 100%;
+    background: #0D0E13;
+}

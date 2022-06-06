@@ -1,0 +1,49 @@
+footer {
+    padding: 13.88889vw 0 5.55556vw;
+    background: #070707;
+    width: 100%;
+    color: #E0CCBB;
+    min-height: 100vh;
+    position: relative;
+    z-index: -1 !important;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#footer-content {
+    display: flex;
+}
+
+#footer-content p:nth-child(2) {
+    font-size: 1.66667vw;
+    line-height: 2.22222vw;
+    margin-top: 1.80556vw;
+}
+
+footer .background {
+    position: absolute;
+    right: -3.47222vw;
+    width: 69.44444vw;
+    height: 69.44444vw;
+    bottom: 0;
+    z-index: -1;
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(7, 7, 7, 0) 0, rgba(7, 7, 7, 0) 36%, #070707 74%, #070707 100%);
+}
+
+footer .background video {
+    width: 100%;
+    height: 100%;
+}
+
+footer hr {
+    height: 1px;
+    background: #5B544C;
+    border: none;
+    margin: 5vw 0;
+}
+
+#footer-final-p {
+    max-width: 80vw;
+    font-weight: 300;
+    font-size: 1.2vw;
+}

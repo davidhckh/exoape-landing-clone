@@ -1,0 +1,17 @@
+#cursor-icon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    background: rgba(0, 0, 0, .2);
+    height: 6vw;
+    width: 6vw;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 1vw;
+    pointer-events: none;
+}

@@ -21,8 +21,10 @@ const HomeHero = () => {
         })
     }, [])
 
+    const container = useRef(null)
+
     return (
-        <div id="hero-container">
+        <div id="hero-container" ref={container} onMouseMove={() => window.cursorIcon ? window.cursorIcon.show('Scroll') : null} onMouseLeave={() => window.cursorIcon ? window.cursorIcon.hide() : null}>
             <div className="content-width column">
                 <div className="hero-background">
                     <img src="/home/exo-ape-hero.webp" alt="exoape hero" ref={backgroundImage} />

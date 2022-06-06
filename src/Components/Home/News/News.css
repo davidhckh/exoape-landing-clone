@@ -1,8 +1,9 @@
 #news-container {
     color: #0D0E13;
-    margin: 12vw 0;
+    padding: 12vw 0;
     width: 100%;
     position: relative;
+    background: white;
 }
 
 #news-media-container {

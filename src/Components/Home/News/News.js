@@ -16,7 +16,7 @@ const News = () => {
     useEffect(() => {
         //Image 0
         gsap.to(wrapper.current, {
-            y: () => window.innerWidth * .18,
+            y: () => window.innerWidth * .2,
             scrollTrigger: { trigger: wrapper.current, scrub: true, end: 'bottom' }
         })
 
@@ -45,36 +45,36 @@ const News = () => {
             x: () => window.innerWidth * .13,
             scrollTrigger: { trigger: image4.current, scrub: .98 , start: 'top bottom', end: 'bottom top'}
         })
-    })
+    }, [])
 
     return (
         <div id="news-container" className="center column">
             <div id="news-media-container" ref={wrapper}>
                 <div className="news-media">
                     <picture type="image">
-                        <source type="image/webp" srcset="https://img2.storyblok.com/270x461/filters:format(webp):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 270w, https://img2.storyblok.com/350x598/filters:format(webp):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 350w, https://img2.storyblok.com/550x940/filters:format(webp):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 550w" />
-                        <img src="https://img2.storyblok.com/550x940/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg" srcset="https://img2.storyblok.com/270x461/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 270w, https://img2.storyblok.com/350x598/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 350w, https://img2.storyblok.com/550x940/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 550w" width="748" height="1278" loading="lazy" />
+                        <source type="image/webp" srcSet="https://img2.storyblok.com/270x461/filters:format(webp):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 270w, https://img2.storyblok.com/350x598/filters:format(webp):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 350w, https://img2.storyblok.com/550x940/filters:format(webp):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 550w" />
+                        <img src="https://img2.storyblok.com/550x940/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg" srcSet="https://img2.storyblok.com/270x461/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 270w, https://img2.storyblok.com/350x598/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 350w, https://img2.storyblok.com/550x940/filters:format(jpeg):quality(70)/f/133769/748x1278/5784aa7150/home-news-1.jpg 550w" width="748" height="1278" loading="lazy" />
                     </picture>
                 </div>
                 <div className="news-media" ref={image1}>
-                    <video playsInline="" loop="loop" muted="muted" autoplay="autoplay" disablePictureInPicture="">
+                    <video playsInline="" loop="loop" muted="muted" autoPlay="autoPlay" disablePictureInPicture="">
                         <source src="https://a.storyblok.com/f/133769/x/9c433c7aac/home-news-diesel-be-a-follower.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div className="news-media" ref={image2}>
                     <picture id="3643671" type="image" data-v-4a179df6="">
-                        <source type="image/webp" srcset="https://img2.storyblok.com/270x383/filters:format(webp):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 270w, https://img2.storyblok.com/350x497/filters:format(webp):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 350w, https://img2.storyblok.com/550x781/filters:format(webp):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" />
-                        <img src="https://img2.storyblok.com/550x781/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg" srcset="https://img2.storyblok.com/270x383/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 270w, https://img2.storyblok.com/350x497/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 350w, https://img2.storyblok.com/550x781/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" width="348" height="494" alt="ottografie site of the year" loading="lazy" />
+                        <source type="image/webp" srcSet="https://img2.storyblok.com/270x383/filters:format(webp):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 270w, https://img2.storyblok.com/350x497/filters:format(webp):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 350w, https://img2.storyblok.com/550x781/filters:format(webp):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" />
+                        <img src="https://img2.storyblok.com/550x781/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg" srcSet="https://img2.storyblok.com/270x383/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 270w, https://img2.storyblok.com/350x497/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 350w, https://img2.storyblok.com/550x781/filters:format(jpeg):quality(70)/f/133769/348x494/21becfd449/home-news-3.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" width="348" height="494" alt="ottografie site of the year" loading="lazy" />
                     </picture>
                 </div>
                 <div className="news-media" ref={image3}>
                     <picture type="image">
-                        <source type="image/webp" srcset="https://img2.storyblok.com/270x181/filters:format(webp):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 270w, https://img2.storyblok.com/350x235/filters:format(webp):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 350w, https://img2.storyblok.com/550x369/filters:format(webp):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" />
-                        <img src="https://img2.storyblok.com/550x369/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg" srcset="https://img2.storyblok.com/270x181/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 270w, https://img2.storyblok.com/350x235/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 350w, https://img2.storyblok.com/550x369/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" width="758" height="508" alt="fwaawwward aebele interiors" loading="lazy" />
+                        <source type="image/webp" srcSet="https://img2.storyblok.com/270x181/filters:format(webp):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 270w, https://img2.storyblok.com/350x235/filters:format(webp):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 350w, https://img2.storyblok.com/550x369/filters:format(webp):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" />
+                        <img src="https://img2.storyblok.com/550x369/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg" srcSet="https://img2.storyblok.com/270x181/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 270w, https://img2.storyblok.com/350x235/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 350w, https://img2.storyblok.com/550x369/filters:format(jpeg):quality(70)/f/133769/758x508/8a1ff60d00/home-news-4.jpg 550w" sizes="(max-width: 1024px) 270px, (max-width: 1280px) 350px, 550px" width="758" height="508" alt="fwaawwward aebele interiors" loading="lazy" />
                     </picture>
                 </div>
                 <div className="news-media" ref={image4}>
-                    <video playsInline="" loop="loop" muted="muted" autoplay="autoplay" disablePictureInPicture="">
+                    <video playsInline="" loop="loop" muted="muted" autoPlay="autoPlay" disablePictureInPicture="">
                         <source src="https://a.storyblok.com/f/133769/x/88b4bf7989/news-rino-pelle.mp4" type="video/mp4" />
                     </video>
                 </div>
