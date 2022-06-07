@@ -3,7 +3,7 @@
 }
 
 .loading-container svg {
-    height: 140px;
+    height: 7.5vw;
     background: #E4E0DB;
 }
 
@@ -14,5 +14,16 @@
 
 .loading-container {
     background: #0D0E13;
-    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    transform-origin: right center;
+    height: calc(100% + 250px);
+    padding-bottom: 250px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 250px));
+}
+
+.loading-transition {
+    transition: 1s cubic-bezier(.42, 0, 0.2, 1);
 }

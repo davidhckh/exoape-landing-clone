@@ -17,6 +17,7 @@ body {
   min-height: 100%;
   scroll-behavior: smooth;
   overscroll-behavior: none;
+  overflow: hidden;
 }
 
 /* #root {

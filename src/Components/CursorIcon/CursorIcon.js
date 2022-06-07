@@ -10,6 +10,9 @@ export default class CursorIcon {
     }
 
     constructor() {
+        //global access
+        window.cursorIcon = this
+
         this.setupEventListeners()
     }
 

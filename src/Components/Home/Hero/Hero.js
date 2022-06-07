@@ -21,12 +21,18 @@ const HomeHero = () => {
         })
     }, [])
 
-    const container = useRef(null)
+    const backgroundWrapper = useRef(null)
+
+    useEffect(() => {
+        setTimeout(() => {
+            backgroundWrapper.current.style.transform = 'translateY(0)'
+        }, 2300)
+    })
 
     return (
-        <div id="hero-container" ref={container} onMouseMove={() => window.cursorIcon ? window.cursorIcon.show('Scroll') : null} onMouseLeave={() => window.cursorIcon ? window.cursorIcon.hide() : null}>
+        <div id="hero-container" onMouseMove={() => window.cursorIcon ? window.cursorIcon.show('Scroll') : null} onMouseLeave={() => window.cursorIcon ? window.cursorIcon.hide() : null}>
             <div className="content-width column">
-                <div className="hero-background">
+                <div className="hero-background loading-transition" ref={backgroundWrapper}>
                     <img src="/home/exo-ape-hero.webp" alt="exoape hero" ref={backgroundImage} />
                 </div>
                 <div className="top-span-container">

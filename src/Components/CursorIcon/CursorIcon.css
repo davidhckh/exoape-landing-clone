@@ -14,4 +14,5 @@
     color: white;
     font-size: 1vw;
     pointer-events: none;
+    transform: scale(0);
 }

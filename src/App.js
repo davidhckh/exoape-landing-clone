@@ -8,18 +8,15 @@ import CursorIcon from './Components/CursorIcon/CursorIcon'
 
 const App = () => {
 
-  const [loadingVisisble, setLoadingVisisble] = useState(false)
-  const [homeVisible, setHomeVisible] = useState(true)
+  const [loadingVisisble, setLoadingVisible] = useState(true)
 
   //Create cursor icon
-  useEffect(() => {
-    window.cursorIcon = new CursorIcon()
-  }, [])
+  useEffect(() => { new CursorIcon() }, [])
 
   return (
-    <div className="App center column">
-      {loadingVisisble ? <LoadingScreen /> : null}
-      {homeVisible ? <Home /> : null}
+    <div className="center column">
+      {loadingVisisble ? <LoadingScreen setLoadingVisible={setLoadingVisible} /> : null}
+      <Home />
     </div>
   )
 }
