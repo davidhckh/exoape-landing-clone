@@ -1,7 +1,6 @@
 # ExoApe Landing Clone
 
 ✏️ Made for practice
-🏗️ This project is under construction.
 
 [Live View](https://exoape-landing-clone.vercel.app/)
 
