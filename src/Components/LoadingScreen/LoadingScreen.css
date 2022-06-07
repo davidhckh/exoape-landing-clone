@@ -25,5 +25,5 @@
 }
 
 .loading-transition {
-    transition: 1s cubic-bezier(.42, 0, 0.2, 1);
+    transition: .9s cubic-bezier(.6, 0, 0.25, 1);
 }

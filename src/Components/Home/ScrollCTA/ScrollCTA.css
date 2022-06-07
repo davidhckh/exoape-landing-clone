@@ -1,9 +1,10 @@
 #scroll-cta {
     color: white;
     position: absolute;
-    bottom: 4vw;
+    top: 92vh;
     right: 4vw;
     font-size: 1vw;
     opacity: .5;
     transition: .3s;
+    z-index: 2
 }

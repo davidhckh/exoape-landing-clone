@@ -24,8 +24,8 @@ const LoadingScreen = ({ setLoadingVisible }) => {
                 setLoadingVisible(false)
 
                 //unlock scrolling
-                setTimeout(() => document.body.style.overflow = 'scroll', 500)
-            }, 1000)
+                setTimeout(() => document.body.style.overflow = 'scroll', 600)
+            }, 900)
         }, 2300)
     }, [])
 

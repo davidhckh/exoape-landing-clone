@@ -19,7 +19,7 @@
     height: 100%;
     background: black;
     max-width: 100%;
-    transform: translateY(100vh) rotate(10deg) scale(1.4);
+    transform: translateY(100vh) translateX(-10vw) rotate(10deg) scale(1.2);
     transform-origin: center;
 }
 
@@ -28,11 +28,13 @@
     object-position: 0 -45px;
     width: 100%;
     pointer-events: none;
+    object-position: center;
 }
 
 #hero-container h1 {
     transform: translateX(-1.4vw);
     letter-spacing: -.79861vw;
+    line-height: 12.70833vw;
 }
 
 #hero-container span {
@@ -49,4 +51,13 @@
 
 .bottom-span {
     margin-top: 7vw;
+}
+
+.hero-title-anim {
+    height: 15.9vw;
+    overflow: hidden;
+}
+
+#hero-container p, #hero-container span {
+    transform-origin: left center;
 }

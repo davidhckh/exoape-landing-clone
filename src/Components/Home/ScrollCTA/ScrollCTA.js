@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import './ScrollCTA.css'
+import gsap from 'gsap'
 
 const ScrollCTA = () => {
 
@@ -15,8 +16,14 @@ const ScrollCTA = () => {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
+    //opening fade in
+    const scrollCTA = useRef(null)
+    useEffect(() => {
+        gsap.fromTo(scrollCTA.current, { opacity: 0 }, { opacity: .5, duration: 1, delay: 2.6 })
+    }, [])
+
     return (
-        <p id="scroll-cta" style={{ 'opacity': opacity }}>
+        <p id="scroll-cta" style={{ 'opacity': opacity }} ref={scrollCTA}>
             Scroll to explore
         </p>
     )
