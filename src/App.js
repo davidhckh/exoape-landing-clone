@@ -1,6 +1,7 @@
 import './shared.css'
 import './fonts.css'
 import { useState, useEffect } from "react"
+import Lenis from '@studio-freight/lenis'
 
 import Home from "./Components/Home/Home"
 import LoadingScreen from "./Components/LoadingScreen/LoadingScreen"
@@ -12,6 +13,19 @@ const App = () => {
 
   //Create cursor icon
   useEffect(() => { new CursorIcon() }, [])
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: .1,
+      smooth: true,
+    })
+
+    const scrollFn = () => {
+      lenis.raf()
+      requestAnimationFrame(scrollFn)
+    }
+    requestAnimationFrame(scrollFn)
+  })
 
   return (
     <div className="center column">

@@ -18,7 +18,7 @@ const News = () => {
     useEffect(() => {
         //Image 0
         gsap.to(wrapper.current, {
-            y: () => window.innerWidth * .2,
+            y: () => window.innerWidth * .15,
             scrollTrigger: { trigger: wrapper.current, scrub: true, end: 'bottom' }
         })
 
