@@ -14,18 +14,24 @@ const App = () => {
   //Create cursor icon
   useEffect(() => { new CursorIcon() }, [])
 
+  /**
+   * Smooth scroll
+   * and unlock scrolling after loading is complete
+   */
   useEffect(() => {
-    const lenis = new Lenis({
-      lerp: .1,
-      smooth: true,
-    })
+    setTimeout(() => {
+      const lenis = new Lenis({
+        lerp: .1,
+        smooth: true,
+      })
 
-    const scrollFn = () => {
-      lenis.raf()
+      const scrollFn = () => {
+        lenis.raf()
+        requestAnimationFrame(scrollFn)
+      }
       requestAnimationFrame(scrollFn)
-    }
-    requestAnimationFrame(scrollFn)
-  })
+    }, 3800)
+  }, [])
 
   return (
     <div className="center column">
